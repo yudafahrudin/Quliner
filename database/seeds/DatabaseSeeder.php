@@ -10,6 +10,7 @@ class DatabaseSeeder extends Seeder
             'name' => str_random(10),
             'email' => 'superadmin@gmail.com',
             'password' => bcrypt('admin123'),
+            'admin' => 1,
             'created_at' => Carbon::parse('1996-02-26'),
             'updated_at' => Carbon::parse('1996-02-26')
         ]);
