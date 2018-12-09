@@ -7,8 +7,6 @@ $username = $url["user"];
 $password = $url["pass"];
 $database = substr($url["path"], 1);
 
-die($host);
-
 return [
 
     /*
@@ -66,7 +64,6 @@ return [
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => $host,
-            'port' => env('DB_PORT', '5432'),
             'database' => $database,
             'username' => $username,
             'password' => $password,
